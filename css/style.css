@@ -1,0 +1,86 @@
+/*The purple bits at the start are called selectors*/
+
+body{
+    background-color: #35C97F;
+    background-image: url(../images/bg.jpg);
+    font-family:Helvetica , Ariel , sans-serif;
+    /* here Ariel is the backup font, if the first one is not available */
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.main{
+    background-color: rgba(79,105,102,0.75) ;
+    max-width:600px;
+    margin: 0 auto;
+    padding: 20px;
+/*    margin: 100px; */
+    border-radius: 20px;
+    box-shadow:0 10px 5px 0 black;
+}
+
+h1{
+    text-align: center;
+    font-family: Impact;
+    font-size:60px;
+    color: #35C97F;
+    margin-bottom: 0;
+    font-family:'Lobster', cursive;
+    font-weight: normal;
+    /*cursive is the fallback option*/
+}
+
+h2{
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight: normal;
+    color:#35C97F;
+}
+
+h3{
+    font-family:'Lobster', cursive;
+    font-weight: normal;
+}
+
+h3{
+    cursor:pointer;
+    margin-bottom:0;
+}
+
+img{
+    display:block;
+    /* Make the image a block so you can margin it - css does not allow margins or padding on images so this must be done first*/
+    margin:0 auto;
+    /*zero margins top and bottom and auto margins left and right*/
+    border: 5px solid #35C97F;
+    border-radius: 100px;
+    width: 200px;
+    /*resizing images is a bad idea - uses up unecessary bandwidth*/
+}
+
+p, /*multiple paragraphs will need class = "intro" so css can be .intro so you can batch them and also change them in batches */
+ul,
+ol{
+    line-height:1.6;
+    /*Using relative line height is better than pixels because if font size changes, things are less likely to mess up */
+    list-style:none;
+    padding-left: 0;
+}
+
+a{
+    font-weight:bold;
+    color:#4F6966;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#4F6966;
+}
+
+
+
+
+
